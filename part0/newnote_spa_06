@@ -1,0 +1,10 @@
+title user creates a new note in SPA
+note over browser:
+user clicks "Save" button
+end note
+note over browser:
+browser executes the event handler
+that rerenders the note list
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 created
